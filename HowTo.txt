@@ -1,0 +1,50 @@
+BACKEND
+
+1)Crear el entorno virtual y activarlo
+$ py -m venv env
+$ env\Scripts\activate
+
+2)Instalar Django
+$ pip install django
+
+3) Iniciar proyecto
+$ django-admin startproject core
+
+4) Agregar otros proyectos
+$ py manage.py startapp centidev
+$ py manage.py startapp centidev_api
+$ py manage.py startapp centidev_New
+$ py manage.py startapp users
+
+5) Copiar la información de las carpetas correspondientes a los proyectos nuevos (centidev, centidev_api, centidev_New, users)
+
+6) Pasar la información de Settings en Core al proyecto
+
+7) Hacer las migraciones
+
+$ py manage.py makemigrations
+$ py manage.py migrate
+
+8) Instalar dependencias de Django
+
+-corsheaders
+-djangorestframework
+-pyodbc
+-djangorestframework-simplejwt
+
+FRONT-END
+
+1) Crear proyecto en carpeta DRF-React y entrar en ella
+
+$ npx create-react-app centidevapi
+$ cd centidevapi
+
+2) Instalar dependencias
+
+npm install react-router-dom
+npm install @material-ui/core
+npm install @material-ui/icons
+npm i --save material-ui-search-bar
+
+3) Pasar carpetas con las vistas y componentes
+		
